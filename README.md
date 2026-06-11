@@ -9,7 +9,7 @@ Fee calculation
 Document checklist generation
 Local fallback report (always works even if AI fails)
 ### 🚀 Features
-
+```text
   ✔ Multi-agent AI system using CrewAI
   ✔ Groq LLM integration (fast inference)
   ✔ Policy-based passport eligibility rules
@@ -17,7 +17,7 @@ Local fallback report (always works even if AI fails)
   ✔ Dynamic document checklist generation
   ✔ Built-in fallback system (works without AI)
   ✔ JSON-based configuration system
-
+```
 ### 🧠 AI Agents Used
 1. Policy Guardian 🛂
 Checks passport eligibility
