@@ -1,14 +1,14 @@
-Passport Readiness AI Crew (CrewAI + Groq)
+## Passport Readiness AI Crew (CrewAI + Groq)
 
 This project is an AI-powered Passport Eligibility & Fee Calculator system built using CrewAI + Groq LLM + Python.
 
 It simulates a real-world government passport processing workflow using multiple AI agents:
 
-Policy validation
+### Policy validation
 Fee calculation
 Document checklist generation
 Local fallback report (always works even if AI fails)
-🚀 Features
+### 🚀 Features
 
 ✔ Multi-agent AI system using CrewAI
 ✔ Groq LLM integration (fast inference)
@@ -18,7 +18,7 @@ Local fallback report (always works even if AI fails)
 ✔ Built-in fallback system (works without AI)
 ✔ JSON-based configuration system
 
-🧠 AI Agents Used
+### 🧠 AI Agents Used
 1. Policy Guardian 🛂
 Checks passport eligibility
 Validates requested validity rules
@@ -28,13 +28,15 @@ Uses structured government fee database
 3. Document Specialist 📄
 Generates required document checklist
 Based on age and profession
-📂 Project Structure
+### 📂 Project Structure
+'''code
 project/
 │── app.py
 │── passport_db.json
 │── .env
 │── README.md
-⚙️ Installation
+'''
+### ⚙️ Installation
 1. Clone the project
 git clone https://github.com/your-repo/passport-ai-crew.git
 cd passport-ai-crew
@@ -46,16 +48,16 @@ venv\Scripts\activate      # Windows
 pip install crewai python-dotenv
 🔑 Environment Setup
 
-Create a .env file:
+### Create a .env file:
 
 GROQ_API_KEY=your_groq_api_key_here
 
-👉 Get API key from:
+### 👉 Get API key from:
 https://console.groq.com/
 
-▶️ How to Run
+### ▶️ How to Run
 python app.py
-📊 Sample Output
+### 📊 Sample Output
 ================ CREW RESULT ================
 
 (Agent-based AI output here if successful)
@@ -70,7 +72,7 @@ python app.py
 | Required ID | NID |
 | Documents | NID Card, Application Summary, Payment Slip |
 | Policy Status | No Issues |
-📦 passport_db.json (Structure)
+### 📦 passport_db.json (Structure)
 fees_2026:
   48_pages:
     5_years:
@@ -78,17 +80,17 @@ fees_2026:
       express: 6325
       super_express: 8625
 
-Includes:
+### Includes:
 
 Fee matrix
 Required documents
 Government rules
-🧩 Business Logic
+#### 🧩 Business Logic
 Passport Policy Rule
 Age < 18 → 5 years validity + Birth Registration
 Age > 65 → 5 years validity + NID
 Else → 10 years validity + NID
-🛡️ Fallback System
+#### 🛡️ Fallback System
 
 Even if AI fails:
 
@@ -98,24 +100,25 @@ Still shows full report
 
 ✔ This makes the system production-safe
 
-⚠️ Common Issues
+### ⚠️ Common Issues
 1. Invalid model error
 
 Use:
 
-groq/llama-3.1-8b-instant
+### groq/llama-3.1-8b-instant
 2. API error
 
-Check:
+### Check:
 
 .env file exists
 API key is valid
 3. CrewAI error
 
 Upgrade:
-
+```
 pip install --upgrade crewai
-📈 Future Improvements
+```
+### 📈 Future Improvements
 Add FastAPI backend
 Add UI dashboard (React)
 Add database storage (PostgreSQL)
