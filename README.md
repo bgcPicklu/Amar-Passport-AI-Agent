@@ -125,8 +125,8 @@ Upgrade:
 pip install --upgrade crewai
 ```
 ### 📈 Future Improvements
-** Add FastAPI backend
-** Add UI dashboard (React)
-** Add database storage (PostgreSQL)
-** Add real government rules API
-** Multi-language support (EN/BN)
+* Add FastAPI backend
+* Add UI dashboard (React)
+* Add database storage (PostgreSQL)
+* Add real government rules API
+* Multi-language support (EN/BN)
