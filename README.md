@@ -10,13 +10,13 @@ Document checklist generation
 Local fallback report (always works even if AI fails)
 ### 🚀 Features
 
-✔ Multi-agent AI system using CrewAI
-✔ Groq LLM integration (fast inference)
-✔ Policy-based passport eligibility rules
-✔ Automatic fee calculation from structured database
-✔ Dynamic document checklist generation
-✔ Built-in fallback system (works without AI)
-✔ JSON-based configuration system
+  ✔ Multi-agent AI system using CrewAI
+  ✔ Groq LLM integration (fast inference)
+  ✔ Policy-based passport eligibility rules
+  ✔ Automatic fee calculation from structured database
+  ✔ Dynamic document checklist generation
+  ✔ Built-in fallback system (works without AI)
+  ✔ JSON-based configuration system
 
 ### 🧠 AI Agents Used
 1. Policy Guardian 🛂
@@ -29,34 +29,42 @@ Uses structured government fee database
 Generates required document checklist
 Based on age and profession
 ### 📂 Project Structure
-'''code
+```text
 project/
 │── app.py
 │── passport_db.json
 │── .env
 │── README.md
-'''
+```
 ### ⚙️ Installation
 1. Clone the project
+```text
 git clone https://github.com/your-repo/passport-ai-crew.git
 cd passport-ai-crew
+```
 2. Create virtual environment
+```text
 python -m venv venv
 source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
+```
 3. Install dependencies
+```text
 pip install crewai python-dotenv
-🔑 Environment Setup
+```
+### 🔑 Environment Setup
 
-### Create a .env file:
-
+Create a .env file:
+```text
 GROQ_API_KEY=your_groq_api_key_here
-
+```
 ### 👉 Get API key from:
 https://console.groq.com/
 
 ### ▶️ How to Run
+```text
 python app.py
+```
 ### 📊 Sample Output
 ================ CREW RESULT ================
 
@@ -103,19 +111,17 @@ Still shows full report
 ### ⚠️ Common Issues
 1. Invalid model error
 
-Use:
-
-### groq/llama-3.1-8b-instant
+Use:groq/llama-3.1-8b-instant
 2. API error
 
-### Check:
+Check:
 
 .env file exists
 API key is valid
 3. CrewAI error
 
 Upgrade:
-```
+```text
 pip install --upgrade crewai
 ```
 ### 📈 Future Improvements
